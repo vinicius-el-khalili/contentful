@@ -1,1 +1,7 @@
- 
+This project is a Next.js application that showcases a variety of recipes on a website. The website's API is built using Contentful, which serves as a headless Content Management System. This allows for easy creation and management of content, enabling the website to be regularly updated with new recipes and information.
+
+A traditional CMS (Content Management System) typically includes both a back-end content management system for creating and managing content, as well as a front-end delivery layer that displays that content on a website or application.
+
+A headless CMS, on the other hand, is a content management system that provides content as a service, without the front-end delivery layer. It separates the content management from the content delivery, allowing the content to be used and displayed on various channels such as websites, mobile apps, smart devices, and more. In other words, a headless CMS only provides an API for developers to access and consume content, and it's up to the developers to create the front-end display layer.
+
+Headless CMS architectures offer greater flexibility and freedom in content delivery, as well as the ability to use any programming language or framework to create custom front-end experiences.
