@@ -2,15 +2,20 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(196, 196, 2);
+    background-color: #F4E640;
 }
 .layout>header{
-    background-color: aliceblue;
-    text-align: center;
     padding: 20px;
+    display: flex;
+}
+.pageHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 .pageTitle{
-    color: blue;
+    color: black;
     font-weight:bolder;
     display: block;
     padding: 20px;
@@ -26,15 +31,15 @@
     margin-top: 5px;
     font-size: 1.2rem;
     line-height: 0px;
+    text-align: end;
 }
 .pageContent{
     height: 100%;
     margin: 20px 40px 20px 40px;
-    background-color: aliceblue;
 }
 .pageFooter{
-    background-color: white;
-    color: blue;
+    background-color: black;
+    color: #F4E640;
     margin-top: auto;
     text-align: center;
     padding: 10px;

@@ -1,16 +1,18 @@
 import Link from "next/link"
 import style from "../styles/layout.module.css"
+import Image from "next/image";
 const Layout = ({children}) => {
     return (
         <div className={style.layout}>
-            <header>
-                <Link href={"/"} style={{textDecoration:"none"}}>
+            <header className={style.pageHeader}>
+                <Link href={"/"} style={{textDecoration:"none"}} className={"pageHeader"}>
                     <div className={style.pageTitle}>
                         <h1>THE</h1>
                         <h1>CATATOUILLE</h1>
-                        <h1>Everyday cousine</h1>
+                        <h1>routine cousine</h1>
                     </div>
                 </Link>     
+                <Image src={"/cat.svg"} width={150} height={150}/>
             </header>
 
             <div className={style.pageContent}>
