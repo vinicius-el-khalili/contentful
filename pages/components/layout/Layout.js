@@ -18,9 +18,9 @@ const Layout = ({children}) => {
             <div className={style.pageContent}>
                 {children}
             </div>
-
             <footer className={style.pageFooter}>
-                <p>Vinicius El Khalili</p>
+                <p>Footer</p>
+
             </footer>
         </div>
     );

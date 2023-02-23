@@ -1,4 +1,27 @@
+.recipeCardContainer{
+    width: 80%;
+    margin: 20px auto;
+}
 .link{
     text-decoration:none;
     color: black;
+    border-top: 4px solid black;
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    background-color: #9c85013b;
+}
+.link>p{
+    text-align: end;
+    width: 100%;
+}
+.cardHeading{
+    padding-left: 1rem;
+}
+.thumbnail{
+    border-left: 1.7rem solid black;
+    border-bottom: 1px solid black;
+    height: 200px;
+    width: 100%;
+    position: relative;
 }

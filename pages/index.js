@@ -1,4 +1,4 @@
-import styles from '@/styles/Home.module.css'
+import style from '@/styles/Home.module.css'
 import { createClient } from 'contentful'
 import RecipeCard from './components/recipeCard/RecipeCard'
 
@@ -21,18 +21,26 @@ export async function getStaticProps(){
 }
 
 export default function Home({recipes}) {
+  console.log(recipes.items)
   return (
-    <>
-      <h1>RECIPES</h1>
+  <>
+  
+    <div className={style.gridContainer}>
+      <div className={style.titleContainer}>
+        DESSERTS
+      </div>
+  
       {recipes.items.map(recipe=>{return (
         <RecipeCard 
           id={recipe.sys.environment.id}
           title={recipe.fields.title}
           cookingTime={recipe.fields.cookingTime}
           slug={recipe.fields.slug}
-        />
-      )})}
+          thumbnail={recipe.fields.thumbnail}
+        />)})}
 
-    </>
+    </div>
+
+  </>
   )
 }

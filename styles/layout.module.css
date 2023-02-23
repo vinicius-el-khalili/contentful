@@ -1,13 +1,18 @@
 .layout{
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     background-color: #F4E640;
 }
 .layout>header{
-    padding: 20px;
+    width: 80%;
+    height: 160px;
+    margin: auto;
+    padding: 100px 0;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
+    border-bottom: 5px solid black;
 }
 .pageHeader{
     display: flex;
