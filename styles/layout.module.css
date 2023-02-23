@@ -7,6 +7,7 @@
 .layout>header{
     padding: 20px;
     display: flex;
+    justify-content: center;
 }
 .pageHeader{
     display: flex;
