@@ -12,7 +12,7 @@ const Layout = ({children}) => {
                         <h1>routine cousine</h1>
                     </div>
                 </Link>     
-                <Image src={"/cat.svg"} width={150} height={150}/>
+                <Image src={"/cat.svg"} width={150} height={150} alt="logo" priority={true} />
             </header>
 
             <div className={style.pageContent}>
