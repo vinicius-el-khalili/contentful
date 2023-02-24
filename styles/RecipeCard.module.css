@@ -5,11 +5,10 @@
 .link{
     text-decoration:none;
     color: black;
-    border-top: 4px solid black;
     display: flex;
     align-items: end;
-    padding: 20px;
-    background-color: #9c85013b;
+    padding: 0;
+    margin: 0;
 }
 .link>p{
     text-align: end;
@@ -17,6 +16,7 @@
 }
 .cardHeading{
     padding-left: 1rem;
+    padding-bottom: 1rem;
 }
 .thumbnail{
     border-left: 1.7rem solid black;
@@ -24,4 +24,7 @@
     height: 200px;
     width: 100%;
     position: relative;
+}
+.thumbnail:hover{
+    border-color: tomato;
 }

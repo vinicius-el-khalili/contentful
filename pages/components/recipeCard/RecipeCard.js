@@ -6,26 +6,22 @@ const RecipeCard = ({id,title,cookingTime,slug,thumbnail}) => {
     return (
         <div key={id} className={style.recipeCardContainer}>
             
-            <div style={{display:"flex",justifyContent:"space-between"}}>
-                    
-                <div className={style.cardHeading}> 
-                    <h2> {title} </h2>
-                    <p> Cooking time: {cookingTime} minutes </p>
-                </div>
-                
-                <Link href={'/recipes/'+slug} className={style.link} >
-                    VIEW RECIPE
-                </Link>
-
+            <div className={style.cardHeading}>
+                <Link href={'/recipes/'+slug} className={style.link}>
+                    <h2>{title}</h2>
+                    </Link>
             </div>
 
             <div className={style.thumbnail}>
-                <Image
-                    src={'https:'+thumbnail.fields.file.url}
-                    fill
-                    style={{objectFit:"cover"}}/>       
+                <Link href={'/recipes/'+slug} className={style.link}>
+                    <Image
+                        src={'https:'+thumbnail.fields.file.url}
+                        fill
+                        style={{objectFit:"cover"}}/>       
+                    </Link>
             </div>
 
+            <p> Cooking time: {cookingTime} minutes </p>
 
         </div>
     );
