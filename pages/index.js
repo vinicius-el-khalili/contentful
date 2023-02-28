@@ -30,9 +30,9 @@ export default function Home({recipes}) {
       </div>
   
       {recipes.items.map(recipe=>{return (
+        
         <RecipeCard
-          key={recipe.sys.environment.id}
-          id={recipe.sys.environment.id}
+          key={recipe.sys.id+"RC"}
           title={recipe.fields.title}
           cookingTime={recipe.fields.cookingTime}
           slug={recipe.fields.slug}

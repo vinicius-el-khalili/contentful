@@ -2,9 +2,9 @@ import style from "@/styles/RecipeCard.module.css"
 import Link from "next/link";
 import Image from "next/image";
 
-const RecipeCard = ({id,title,cookingTime,slug,thumbnail}) => {
+const RecipeCard = ({title,slug,thumbnail}) => {
     return (
-        <div key={id+"rc"} className={style.recipeCardContainer}>
+        <div className={style.recipeCardContainer}>
             
             <div className={style.cardHeading}>
                 <Link href={'/recipes/'+slug} className={style.link}>
@@ -18,6 +18,11 @@ const RecipeCard = ({id,title,cookingTime,slug,thumbnail}) => {
                         src={'https:'+thumbnail.fields.file.url}
                         fill
                         style={{objectFit:"cover"}}
+                        alt={title}
+                        priority={true}
+                        sizes="(max-width: 768px) 50vw,
+                                (max-width: 1200px) 25vw,
+                                25vw"
                         />
                     </Link>
             </div>
