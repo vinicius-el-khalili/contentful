@@ -9,8 +9,10 @@ const RecipePage = ({thumbnail,title,ingredients,method}) => {
             <div className={style.thumbnail}>
                 <Image 
                 src={thumbnail}
+                alt={title}
                 fill
                 style={{objectFit:"cover"}}
+                priority={true}
                 />
             </div>
 
@@ -19,7 +21,7 @@ const RecipePage = ({thumbnail,title,ingredients,method}) => {
             <div className={style.ingredients}>
                 <h2>Ingredients</h2>    
                 {ingredients.map(ingredient=>{return(
-                    <p>{ingredient}</p>
+                    <p key={title+ingredient}>{ingredient}</p>
                 )})}
             </div>
 

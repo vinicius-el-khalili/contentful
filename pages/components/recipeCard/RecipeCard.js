@@ -20,9 +20,9 @@ const RecipeCard = ({title,slug,thumbnail}) => {
                         style={{objectFit:"cover"}}
                         alt={title}
                         priority={true}
-                        sizes="(max-width: 768px) 50vw,
-                                (max-width: 1200px) 25vw,
-                                25vw"
+                        sizes="(max-width: 1200px) 100vw,
+                                (min-width: 1200px) 80vw,
+                                "
                         />
                     </Link>
             </div>
