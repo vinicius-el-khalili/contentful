@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+:root{
+  --primary-yellow:#F4E640;
+  --el1:#d9d2cc;
+  --el2:#f2f1ef;
+  --el3:#d9b18e;
+  --el4:#a67564;
+  --el5:#723e31;
+  --el6:#192231;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +27,7 @@ body{
   }
   
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: var(--el2);
 }
  
 ::-webkit-scrollbar-thumb {

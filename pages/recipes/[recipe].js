@@ -1,5 +1,12 @@
 import { createClient } from 'contentful'
 
+
+const Recipe = ({recipe}) => {
+    return (
+        <>{recipe.fields.title}</>
+    );
+}
+
 const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY
@@ -35,10 +42,4 @@ export async function getStaticProps(context){
     }
 }
 
-const Recipe = ({recipe}) => {
-    return (
-        <>{recipe.fields.title}</>
-    );
-}
- 
 export default Recipe;

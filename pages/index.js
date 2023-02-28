@@ -26,11 +26,12 @@ export default function Home({recipes}) {
   
     <div className={style.gridContainer}>
       <div className={style.titleContainer}>
-        MAIN DISHES
+        RECIPES
       </div>
   
       {recipes.items.map(recipe=>{return (
-        <RecipeCard 
+        <RecipeCard
+          key={recipe.sys.environment.id}
           id={recipe.sys.environment.id}
           title={recipe.fields.title}
           cookingTime={recipe.fields.cookingTime}

@@ -4,11 +4,11 @@ import Image from "next/image";
 
 const RecipeCard = ({id,title,cookingTime,slug,thumbnail}) => {
     return (
-        <div key={id} className={style.recipeCardContainer}>
+        <div key={id+"rc"} className={style.recipeCardContainer}>
             
             <div className={style.cardHeading}>
                 <Link href={'/recipes/'+slug} className={style.link}>
-                    <h2>{title}</h2>
+                    <h1>{title}</h1>
                     </Link>
             </div>
 
@@ -17,7 +17,8 @@ const RecipeCard = ({id,title,cookingTime,slug,thumbnail}) => {
                     <Image
                         src={'https:'+thumbnail.fields.file.url}
                         fill
-                        style={{objectFit:"cover"}}/>       
+                        style={{objectFit:"cover"}}
+                        />
                     </Link>
             </div>
 
