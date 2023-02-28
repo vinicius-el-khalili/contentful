@@ -1,5 +1,5 @@
 import Link from "next/link"
-import style from "@/styles/Layout.module.css"
+import style from "../../../styles/Layout.module.css"
 import Image from "next/image";
 const Layout = ({children}) => {
     return (
