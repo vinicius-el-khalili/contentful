@@ -11,7 +11,9 @@ const Layout = ({children}) => {
                         <h1>CATATOUILLE</h1>
                         <h1>routine cousine</h1>
                     </div>
-                    <Image src={"/cat.svg"} width={150} height={150} alt="logo" priority={true} />
+                    <div className={style.catatouille}>
+                        <Image src={"/cat.svg"} fill alt="logo" priority={true} style={{objectFit:"cover"}} />
+                    </div>
                 </Link>     
             </header>
 

@@ -17,6 +17,8 @@
 }
 body{
     font-family: "Bree Serif";
+    background-color: var(--el2);
+
 }
 .tdn{
     text-decoration: none;

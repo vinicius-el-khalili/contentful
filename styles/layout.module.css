@@ -2,7 +2,6 @@
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-color: var(--el2);
 }
 .layout>header{
     width: 80%;
@@ -30,17 +29,19 @@
     line-height: 0;
 }
 .pageTitle>h1:nth-child(2){
-    font-size: 3.2rem;
+    font-size: 3.2em;
 }
 .pageTitle>h1:nth-child(3){
     margin-top: 5px;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     line-height: 0px;
     text-align: end;
 }
 .pageContent{
     height: 100%;
-    margin: 20px 40px 20px 40px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 .pageFooter{
     background-color: black;
@@ -49,4 +50,22 @@
     text-align: center;
     padding: 10px;
     font-weight:lighter;
+}
+.catatouille{
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+/* Responsiveness */
+
+@media screen and (max-width:800px) {
+
+    .pageTitle{
+        font-size: .7rem;
+    }
+
+    .catatouille{
+        width: 100px;
+        height: 100px;
+    }
 }
