@@ -21,7 +21,6 @@ const RecipeCard = ({id,title,cookingTime,slug,thumbnail}) => {
                         />
                     </Link>
             </div>
-
         </div>
     );
 }
