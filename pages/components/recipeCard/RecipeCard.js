@@ -22,8 +22,6 @@ const RecipeCard = ({id,title,cookingTime,slug,thumbnail}) => {
                     </Link>
             </div>
 
-            <p> Cooking time: {cookingTime} minutes </p>
-
         </div>
     );
 }
